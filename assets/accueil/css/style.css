@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: arial, serif;
+    font-size: 17px;
+    color: #F55F25;
+    /**line-height: 1.6;pour gerer l'espace entre le texte**/
+    text-shadow: 1px 1px 10px black;
+    background-image: url("../img/home.png");/**trouver l'image ou qu'il soit**/
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.vue{
+    height: 70vh;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px;
+    position: relative;
+}
+.vue h1{
+    font-size:50px;
+}
+.vue p{
+    font-size: 23px;
+    color:#F9F7F2;
+    margin-top: 10px;
+    margin-bottom: 25px;
+}
+.button {
+    font-size: 18px;
+    text-decoration: none;
+    color: #F9F7F2;
+    border: #F9F7F2 2px solid;
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+.vue .button:hover{
+    background:#F55F25;
+    color: #fff;
+}
+
+/*PAGE INSCRIPTION*/
+.overlay{
+    position: fixed;
+    top: 0;
+    /*z-index: 20;*/
+    /*bottom: 0;*/
+    /*right: 0;*/
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.4);
+    /*background-attachment: fixed;*/
+}
+
+#img-access {
+    background-image: url(../img/access.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#img-excel {
+    background-image: url(../img/excel.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#img-word {
+    background-image: url(../img/word.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#img-powerpoint {
+    background-image: url(../img/powerpoint.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#img-w-s {
+    background-image: url("../img/windows server.jpg");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#img-python {
+    background-image: url(../img/python.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#img-3 {
+    background-image: url("../img/the three.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#img-outlook {
+    background-image: url("../img/outlook.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}

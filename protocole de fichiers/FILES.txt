@@ -1,0 +1,5 @@
+PROTOCOLE DE FICHIER SFTP L’ACCÈS 
+
+nom d’hôte:  151.80.22.49
+nom d'utilisateur : polytech
+mot de passe: Ed84@iz18#17
