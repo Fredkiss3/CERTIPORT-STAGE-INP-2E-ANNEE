@@ -41,18 +41,18 @@ CREATE TABLE IF NOT EXISTS `certifications` (
 -- Structure de la table `disponibilite`
 --
 
-# DROP TABLE IF EXISTS `disponibilite`;
-# CREATE TABLE IF NOT EXISTS `disponibilite` (
-#                                                `idDisponibilite` int(11) NOT NULL AUTO_INCREMENT,
-#                                                `date` date DEFAULT NULL,
-#                                                `HeureDebut` time DEFAULT NULL,
-#                                                `HeureFin` time DEFAULT NULL,
-#                                                `Salles_idSalle` int(11) NOT NULL,
-#                                                `Surveillants_idSurveillant` int(11) NOT NULL,
-#                                                PRIMARY KEY (`idDisponibilite`),
-#                                                KEY `Salles_idSalle` (`Salles_idSalle`),
-#                                                KEY `Surveillants_idSurveillant` (`Surveillants_idSurveillant`)
-# ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+ DROP TABLE IF EXISTS `disponibilite`;
+ CREATE TABLE IF NOT EXISTS `disponibilite` (
+                                                `idDisponibilite` int(11) NOT NULL AUTO_INCREMENT,
+                                                `date` date DEFAULT NULL,
+                                                `HeureDebut` time DEFAULT NULL,
+                                                `HeureFin` time DEFAULT NULL,
+                                                `Salles_idSalle` int(11) NOT NULL,
+                                                `Surveillants_idSurveillant` int(11) NOT NULL,
+                                                PRIMARY KEY (`idDisponibilite`),
+                                                KEY `Salles_idSalle` (`Salles_idSalle`),
+                                                KEY `Surveillants_idSurveillant` (`Surveillants_idSurveillant`)
+ ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
 
@@ -197,9 +197,9 @@ CREATE TABLE IF NOT EXISTS `utilisateurs` (
 --
 -- Contraintes pour la table `disponibilite`
 --
-# ALTER TABLE `disponibilite`
-#     ADD CONSTRAINT `disponibilite_ibfk_1` FOREIGN KEY (`Salles_idSalle`) REFERENCES `salles` (`idSalle`),
-#     ADD CONSTRAINT `disponibilite_ibfk_2` FOREIGN KEY (`Surveillants_idSurveillant`) REFERENCES `surveillants` (`idSurveillant`);
+ ALTER TABLE `disponibilite`
+     ADD CONSTRAINT `disponibilite_ibfk_1` FOREIGN KEY (`Salles_idSalle`) REFERENCES `salles` (`idSalle`),
+     ADD CONSTRAINT `disponibilite_ibfk_2` FOREIGN KEY (`Surveillants_idSurveillant`) REFERENCES `surveillants` (`idSurveillant`);
 
 --
 -- Contraintes pour la table `machines`
